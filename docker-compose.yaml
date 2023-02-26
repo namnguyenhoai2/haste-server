@@ -6,6 +6,8 @@ services:
       - STORAGE_TYPE=memcached
       - STORAGE_HOST=memcached
       - STORAGE_PORT=11211
+      - STATIC_MAX_AGE=311040000
+      - STORAGE_EXPIRE_SECONDS=311040000
     ports:
       - 8012:7777
   memcached:
